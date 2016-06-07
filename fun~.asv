@@ -1,0 +1,10 @@
+function Y = funAppr(n, x )
+%FUN~ Summary of this function goes here
+%   Detailed explanation goes here
+Y=0;
+s= max(size(n));
+for j = 1:s
+    Y=Y+(Interp(n,n(j,1),x)*(n(j,1)^2); 
+end
+end
+
