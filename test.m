@@ -1,5 +1,3 @@
-i=0
-while (i~=2 && i<10)
-    i
-    i++;
+for i = 1 : 10
+	lol = 'lol'
 end
