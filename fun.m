@@ -1,10 +1,9 @@
-function Y = fun( x, z )
+function Y = fun( x )
 %FUN Summary of this function goes here
 %   Detailed explanation goes here
-si= max(size(x));
-for i = 1:si
+s= length(x);
+Y=0;
+for i = 1:(s-1)
 
-    Y(i,1) = x(i,1)^2 + z(i,1)^2;
+    Y = Y+(x(i)*x(i+1));
 end
-end
-
