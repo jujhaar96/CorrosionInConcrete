@@ -4,6 +4,7 @@ function Value = RelMean1(n ,w, k, E )
 
 value1 = 0;
 value2 = 0;
+value3 = 0;
 a=unique(n);
 c=length(n);
 d=length(a);
@@ -17,4 +18,7 @@ value1 = 0;
     end
 value2 = value2+((value1 - fun(E))*w(j)/c);
 end
-Value=value2/fun(E);
+for i = 1:c
+    value3 = value3 + fun(E)*w(i)/c;
+end    
+Value=value2/value3;

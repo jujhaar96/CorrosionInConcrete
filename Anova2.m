@@ -17,7 +17,7 @@ a=unique(n(:,k));
       
       value = 0;
       value1 = 0;
-      if abs(RelMean2(n, n(:,k),n(:,l), w, k, l, x, E))>10^(-5)
+      if abs(RelMean2(n, n(:,k),n(:,l), w, k, l, x, E))>10^(-3)
        c = length(a);
        t = length(b);
         for i = 1:c
